@@ -412,7 +412,7 @@ def solve_plate_optimization(tags, ups_per_plate, plate_count, seed_solution, ve
     solver = cp_model.CpSolver()
     
     #change running time here
-    solver.parameters.max_time_in_seconds = 120 #secs
+    solver.parameters.max_time_in_seconds = 10 #secs
     solver.parameters.random_seed = 42
     #solver.parameters.num_search_workers = 8
 
