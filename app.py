@@ -414,7 +414,7 @@ def solve_plate_optimization(tags, ups_per_plate, plate_count, seed_solution, ve
     #change running time here
     solver.parameters.max_time_in_seconds = 120 #secs
     solver.parameters.random_seed = 42
-    solver.parameters.num_search_workers = 8
+    #solver.parameters.num_search_workers = 8
 
     cb = PlateOptimizationCallback(tag_to_plate, ups_vars, plate_sheets, tags, plate_count, ups_per_plate, verbose=verbose)
     status = solver.SolveWithSolutionCallback(model, cb)
