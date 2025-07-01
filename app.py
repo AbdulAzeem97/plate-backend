@@ -38,4 +38,4 @@ def get_task_status(task_id):
 
 
 if __name__ == '__main__':
-    app.run(host='192.168.183.53', port=5200, debug=True)
+    app.run(host='192.168.2.57', port=5200, debug=True)

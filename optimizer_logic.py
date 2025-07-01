@@ -55,7 +55,7 @@ class PlateOptimizationCallback(cp_model.CpSolverSolutionCallback):
                         }
 
                         # Add optional CEO fields if they exist
-                        for field in ["ITEM_DESCRIPTION", "ITEM_CODE", "PRICE", "RATIO", "RUN", "SHEET"]:
+                        for field in ["ITEM_DESCRIPTION", "ITEM_CODE", "PRICE", "EP_NO", "RUN", "SHEET"]:
                             if field in item:
                                 result[field] = item[field]
 
