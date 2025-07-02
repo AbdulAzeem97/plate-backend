@@ -10,7 +10,7 @@ celery_app = Celery(
 
 # Use gevent pool for better Windows compatibility
 celery_app.conf.update(
-    worker_pool='gevent',
+    #worker_pool='gevent',
     worker_concurrency=4,  # Adjust based on your needs
     task_serializer='json',
     accept_content=['json'],

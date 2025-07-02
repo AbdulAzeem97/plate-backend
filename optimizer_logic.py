@@ -278,10 +278,10 @@ def solve_plate_optimization(tags, ups_per_plate, plate_count, seed_solution, ve
             print(f"\n🚀 Starting optimization for {len(tags)} tags (Large Dataset)...")
             print(f"   ➤ Will stop if no improvement for 10 minutes")
     elif len(tags) > 50:
-        solver.parameters.max_time_in_seconds = 600  # 10 minutes
+        solver.parameters.max_time_in_seconds = 900  # 15 minutes
         if verbose:
             print(f"\n🚀 Starting optimization for {len(tags)} tags...")
-            print(f"   ➤ Time limit: 10 minutes")
+            print(f"   ➤ Time limit: 15 minutes")
     elif len(tags) > 25:
         solver.parameters.max_time_in_seconds = 300  # 5 minutes
         if verbose:
